@@ -38,8 +38,8 @@
 
     btnFind.addEventListener("click", () => {
       result.innerHTML = "";
-      const initial = document.getElementById("initial").value;
-      const final = document.getElementById("final").value;
+      const initial = parseInt(document.getElementById("initial").value);
+      const final = parseInt(document.getElementById("final").value);
 
       for (let i = initial; i <= final; i++) {
         if (i < 0) {
